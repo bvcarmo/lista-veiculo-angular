@@ -1,0 +1,19 @@
+{
+  "name": "desafio-infosistemas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 100000",
+    "start": "node index.js"
+  },
+  "author": "Bruno Vinícius",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "mocha": "^7.2.0",
+    "sqlite3": "^4.2.0"
+  }
+}
