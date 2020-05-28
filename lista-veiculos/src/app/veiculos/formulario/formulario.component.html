@@ -1,0 +1,27 @@
+<section class="divFormulario">
+	<h1>Cadastrar veículo</h1>
+	<form [formGroup]="insertForm">
+		<p>Placa:</p>
+		<input formControlName="placa" type="text" class="form-control" autofocus>
+		<small class="text-danger d-block mt-2" *ngIf="insertForm.get('placa').errors?.required">Placa é um campo obrigatório.</small>
+		<p>Chassi:</p>
+		<input formControlName="chassi" type="text" class="form-control">
+		<small class="text-danger d-block mt-2" *ngIf="insertForm.get('chassi').errors?.required">Chassi é um campo obrigatório.</small>
+		<p>Renavam:</p>
+		<input formControlName="renavam" type="text" class="form-control">
+		<small class="text-danger d-block mt-2" *ngIf="insertForm.get('renavam').errors?.renavam">Renavam é um campo obrigatório e deve ser preenchido com 11 dígitos.</small>
+		<p>Modelo:</p>
+		<input formControlName="modelo" type="text" class="form-control">
+		<small class="text-danger d-block mt-2" *ngIf="insertForm.get('modelo').errors?.required">Modelo é um campo obrigatório.</small>
+		<p>Marca:</p>
+		<input formControlName="marca" type="text" class="form-control">
+		<small class="text-danger d-block mt-2" *ngIf="insertForm.get('marca').errors?.required">Marca é um campo obrigatório.</small>
+		<p>Ano:</p>
+		<input formControlName="ano" type="text" class="form-control">
+		<small class="text-danger d-block mt-2" *ngIf="insertForm.get('ano').errors?.ano">Ano deve ser preenchido por 4 dígitos.</small>
+
+		<input [disabled]="insertForm.invalid || insertForm.pending" type="button" value="Inserir" class="form-control btn-primary mt-4 mb-2" (click)="inserirVeiculo()">
+	</form>
+
+</section>
+

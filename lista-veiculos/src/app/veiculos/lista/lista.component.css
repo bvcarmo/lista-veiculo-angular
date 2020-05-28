@@ -1,0 +1,18 @@
+#tabelaVeiculos {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.btnDeletar {
+    color: red;
+}
+
+
+.btnEditar {
+    color:blue;
+}
+
+td,th {
+    text-align: center;
+}

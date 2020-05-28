@@ -1,0 +1,39 @@
+<table id="tabelaVeiculos" class="table table-hover table-responsive-sm table-responsive-md">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Placa</th>
+        <th scope="col">Chassi</th>
+        <th scope="col">Renavam</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Modelo</th>
+        <th scope="col">Ano</th>
+        <th scope="col">Opções</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let veiculo of veiculos">
+            <th scope="row">{{veiculo.id}}</th>
+            <td>{{veiculo.placa}}</td>
+            <td>{{veiculo.chassi}}</td>
+            <td>{{veiculo.renavam}}</td>
+            <td>{{veiculo.marca}}</td>
+            <td>{{veiculo.modelo}}</td>
+            <td>{{veiculo.ano}}</td>
+            <td>
+                <i id="btnDeletar_{{veiculo.id}}" class="fa fa-trash btnDeletar mr-2" title="deletar" (click)="open(content,$event.target.id)" ></i>
+                <i id="btnAlterar_{{veiculo.id}}" class="fa fa-pencil btnEditar" title="alterar" [routerLink]="['veiculo',veiculo.id]" ></i>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Você deseja mesmo continuar?</h4>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-success" (click)="modal.close(true)">Sim</button>
+      <button type="button" class="btn btn-danger" (click)="modal.close(false)">Não</button>
+    </div>
+  </ng-template>
