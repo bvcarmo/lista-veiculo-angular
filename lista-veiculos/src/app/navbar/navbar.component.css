@@ -5,3 +5,12 @@
 .navbar-light .navbar-nav .nav-link{
     color: white;
 }
+
+#navbar-div {
+    width: 80%;
+}
+
+.navbar-text .nav-login{
+    color: white;
+    text-decoration: none;
+}

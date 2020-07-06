@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Veiculo } from '../veiculo';
+import { Veiculo } from './veiculo';
 
 const API = 'http://localhost:3000';
 

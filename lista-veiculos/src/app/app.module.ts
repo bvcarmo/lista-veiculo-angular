@@ -9,20 +9,17 @@ import { ToastrModule } from 'ngx-toastr';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { FormularioComponent } from './veiculos/formulario/formulario.component';
-import { ListaComponent } from './veiculos/lista/lista.component';
 import { AppRoutingModule } from './app.routing.module';
-import { UpdateVeiculosComponent } from './veiculos/update-veiculos/update-veiculos.component';
 import { HomeComponent } from './home/home.component';
+import { VeiculosModule } from './veiculos/veiculos.module';
+import { LoginComponent } from './home/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FormularioComponent,
-    ListaComponent,
-    UpdateVeiculosComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +29,8 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    VeiculosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,8 +4,9 @@ import {Routes, RouterModule, Router} from '@angular/router';
 import { ListaComponent } from './veiculos/lista/lista.component';
 import { FormularioComponent } from './veiculos/formulario/formulario.component';
 import { UpdateVeiculosComponent } from './veiculos/update-veiculos/update-veiculos.component';
-import { VeiculoResolver } from './veiculo.resolver'; 
+import { VeiculoResolver } from './veiculos/veiculo.resolver'; 
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './home/login/login.component';
 
 const routes : Routes = [
     {
@@ -26,6 +27,10 @@ const routes : Routes = [
         resolve: {
             veiculo: VeiculoResolver
         }
+    },
+    {
+        path: 'login',
+        component: LoginComponent
     }
 ];
 

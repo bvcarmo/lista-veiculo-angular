@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Veiculo } from 'src/app/veiculo';
+import { Veiculo } from '../veiculo';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { VeiculoService } from '../veiculos.service';
-import { NotificationService } from 'src/app/notification-service';
-import { anoValidator } from '../../validators/data-ano.validator';
-import { renavamValidator } from 'src/app/validators/renavam.validator';
+import { NotificationService } from '../../shared/notification-service';
+import { anoValidator } from '../../shared/validators/data-ano.validator';
+import { renavamValidator } from '../../shared/validators/renavam.validator';
 
 @Component({
 	selector: 'app-formulario',

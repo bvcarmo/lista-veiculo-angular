@@ -1,0 +1,23 @@
+.sec-login {
+    width: 35%;
+    margin:auto;
+    height: 400px;
+    background-color:rgb(187, 187, 187);
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.sec-login-title {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.sec-login-div {
+    width: 80%;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.sec-login-div-btn {
+    margin-top: 20px;
+}

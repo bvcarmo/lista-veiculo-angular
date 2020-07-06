@@ -1,7 +1,7 @@
 import { Component, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { VeiculoService } from '../veiculos.service';
-import { NotificationService } from 'src/app/notification-service';
+import { NotificationService } from '../../shared/notification-service';
 
 @Component({
   selector: 'app-lista',
