@@ -13,4 +13,4 @@ function verifyX(token){
 // const sign = payload => jwt.sign(payload, secret, { expiresIn: 86400 })
 // const verify = token => jwt.verify(token, secret)
 
-module.exports = jwtx
+module.exports = jwt
